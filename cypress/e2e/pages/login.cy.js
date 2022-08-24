@@ -8,14 +8,14 @@ export class LoginPage {
         cy.get(this.masukButton).click();
     }
 
-    enterEmail (email) {
+    enterEmail () {
         cy.get(this.companyEmail)
-            .should('not.be.empty')
-            .and();
+            .type(Cypress.env('ENV_EMAIL_COMPANY'));
     }
 
-    enterPassword (password) {
-        cy.get(this.password).type(password);
+    enterPassword () {
+        cy.get(this.password)
+            .type(Cypress.env('ENV_PASS_COMPANY'));
     }
 
     clickSubmit () {

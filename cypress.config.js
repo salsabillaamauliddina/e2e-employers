@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-
+require('dotenv').config()
 module.exports = defineConfig({
   e2e: {
     watchForFileChanges: false,
@@ -9,4 +9,8 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  env: {
+    ENV_EMAIL_COMPANY: process.env.ENV_EMAIL_COMPANY,
+    ENV_PASS_COMPANY: process.env.ENV_PASS_COMPANY
+  }
 });

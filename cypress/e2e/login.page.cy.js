@@ -11,7 +11,7 @@ describe('All login pages test', () => {
     it ('Login with valid credentials', () => {
         loginPage.clickButton();
         loginPage.enterEmail();
-        // loginPage.enterPassword();
-        // loginPage.clickSubmit();
+        loginPage.enterPassword();
+        loginPage.clickSubmit();
     });
 });

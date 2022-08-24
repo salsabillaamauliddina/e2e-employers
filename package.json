@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/salsabillaamauliddina/e2e-employers#readme",
   "devDependencies": {
-    "cypress": "^10.6.0"
+    "cypress": "^10.6.0",
+    "cypress-dotenv": "^2.0.0",
+    "dotenv": "^16.0.1"
   }
 }
