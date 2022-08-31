@@ -1,10 +1,10 @@
 export class SubscriptionPage {
-  previewButton ='button.sc-bZkfAO bxJEZL';
+  previewButton =".sc-bZkfAO.bxJEZL";
   editViewPage = '.sc-bZkfAO cWBUiz';
 
 
   clickPreview () {
-    cy.get(this.previewButton).click();
+    cy.get(this.previewButton).find().click();
   }
 
   clickEditView () {

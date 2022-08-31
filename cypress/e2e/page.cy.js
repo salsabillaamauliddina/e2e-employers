@@ -11,28 +11,28 @@ describe('All pages test', () => {
     });
 
 
-    it ('Login with valid credentials', () => {
-        loginPage.clickButton();
-        loginPage.enterEmail();
-        loginPage.enterPassword();
-        loginPage.clickSubmit();
-    });
-
-    it('Login with invalid credentials', () => {
-        loginPage.clickButton();
-        loginPage.invalidEmail();
-        loginPage.invalidPassword();
-        loginPage.clickSubmit();
-        loginPage.notifyError();
-    })
-
-    // it('Subscription Preview Tests', () => {
+    // it ('Login with valid credentials', () => {
     //     loginPage.clickButton();
     //     loginPage.enterEmail();
     //     loginPage.enterPassword();
     //     loginPage.clickSubmit();
-    //     subscription.clickPreview();
+    // });
+
+    // it('Login with invalid credentials', () => {
+    //     loginPage.clickButton();
+    //     loginPage.invalidEmail();
+    //     loginPage.invalidPassword();
+    //     loginPage.clickSubmit();
+    //     loginPage.notifyError();
     // })
+
+    it('Subscription Preview Tests', () => {
+        loginPage.clickButton();
+        loginPage.enterEmail();
+        loginPage.enterPassword();
+        loginPage.clickSubmit();
+        subscription.clickPreview();
+    })
 
     // it('Subscription Edit Preview Tests', () => {
     //     loginPage.clickButton();
